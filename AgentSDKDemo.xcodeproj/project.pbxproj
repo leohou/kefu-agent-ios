@@ -1671,6 +1671,7 @@
 		90FC92412486323B00014CCC /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		90FC92562486363C00014CCC /* EMRealtimeSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMRealtimeSearch.h; sourceTree = "<group>"; };
 		90FC92572486363D00014CCC /* EMRealtimeSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMRealtimeSearch.m; sourceTree = "<group>"; };
+		930E4D2D27969046007CFE50 /* AgentSDKDemoRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgentSDKDemoRelease.entitlements; sourceTree = "<group>"; };
 		935FF7FC277451320034ED6F /* KFWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KFWebViewController.h; sourceTree = "<group>"; };
 		935FF7FD277451320034ED6F /* KFWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KFWebViewController.m; sourceTree = "<group>"; };
 		D3058CE51FD67BAE0091E048 /* HDSuperviseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDSuperviseCell.h; sourceTree = "<group>"; };
@@ -2901,6 +2902,13 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		93EFFBCF27B9FDE30043DE06 /* AgoraSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AgoraSDK;
+			sourceTree = "<group>";
+		};
 		D3058CE21FD675810091E048 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -3873,6 +3881,8 @@
 		D33F46671E9F71A000FE6DCE /* AgentSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				93EFFBCF27B9FDE30043DE06 /* AgoraSDK */,
+				930E4D2D27969046007CFE50 /* AgentSDKDemoRelease.entitlements */,
 				90591CD72068B14F007367BD /* KFMonitorViewController */,
 				90591C152068ADC3007367BD /* Custom */,
 				D381EFCD1EA4B64F0092BD3C /* AgentSDKDemo.entitlements */,
@@ -4796,7 +4806,8 @@
 						};
 					};
 					D3E9CC841FBED182005E3677 = {
-						DevelopmentTeam = JC854K845H;
+						DevelopmentTeam = 499WYUV8Q2;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -6427,6 +6438,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = AgentSDKDemo/AgentSDKDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI HOU (UGP7ZG964L)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 499WYUV8Q2;
@@ -6472,7 +6484,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CODE_SIGN_ENTITLEMENTS = AgentSDKDemo/AgentSDKDemo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AgentSDKDemo/AgentSDKDemoRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: EaseMob Inc.";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 8;
@@ -6519,8 +6531,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_ENTITLEMENTS = AgentSDKDemo/AgentSDKDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI HOU (UGP7ZG964L)";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_TEAM = JC854K845H;
+				DEVELOPMENT_TEAM = 499WYUV8Q2;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/AgentSDKDemo/FrameWorks",
@@ -6554,6 +6568,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easemob.kefuapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ease_wildcard;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
